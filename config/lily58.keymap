@@ -21,8 +21,8 @@
         tri_layer = {
             if-layers = <RIGHT_LAYER LEFT_LAYER>;
             then-layer = <TRI_LAYER>;
-        }
-    }
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
