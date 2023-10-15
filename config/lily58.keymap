@@ -29,17 +29,17 @@
 
         default_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |  ESC  |  1  |  2  |   3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   | PG_UP |
-// |   `   |  Q  |  W  |   E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   | PG_DN |
+// |  ESC  |  1  |  2  |   3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |  DEL  |
+// |   `   |  Q  |  W  |   E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   |   \   |
 // |  TAB  |  A  |  S  |   D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
-// | SHIFT |  Z  |  X  |   C   |  V   |  B   |   "["  |  |  "]"  |  N   |  M    |  ,    |  .   |   /   |   \   |
+// | SHIFT |  Z  |  X  |   C   |  V   |  B   |   "["  |  |  "]"  |  N   |  M    |  ,    |  .   |   /   | SHIFT |
 //                     | LOWER | CTRL | GUI  |  SPACE |  | ENTER | BSPC |  ALT  | RAISE |
             bindings = <
-&kp ESC   &kp N1 &kp N2 &kp N3           &kp N4    &kp N5                        &kp N6   &kp N7    &kp N8    &kp N9  &kp N0   &kp PG_UP
-&kp GRAVE &kp Q  &kp W  &kp E            &kp R     &kp T                         &kp Y    &kp U     &kp I     &kp O   &kp P    &kp PG_DN
+&kp ESC   &kp N1 &kp N2 &kp N3           &kp N4    &kp N5                        &kp N6   &kp N7    &kp N8    &kp N9  &kp N0   &kp DEL
+&kp GRAVE &kp Q  &kp W  &kp E            &kp R     &kp T                         &kp Y    &kp U     &kp I     &kp O   &kp P    &kp BSLH
 &kp TAB   &kp A  &kp S  &kp D            &kp F     &kp G                         &kp H    &kp J     &kp K     &kp L   &kp SEMI &kp SQT
-&kp LSHFT &kp Z  &kp X  &kp C            &kp V     &kp B    &kp LBKT    &kp RBKT &kp N    &kp M     &kp COMMA &kp DOT &kp FSLH &kp BSLH
-                        &mo RIGHT_LAYER  &kp LCTRL &kp LGUI &kp SPACE   &kp RET  &kp BSPC &kp LALT  &mo LEFT_LAYER
+&kp LSHFT &kp Z  &kp X  &kp C            &kp V     &kp B    &kp LBKT    &kp RBKT &kp N    &kp M     &kp COMMA &kp DOT &kp FSLH &kp RSHIFT
+                        &mo LEFT_LAYER  &kp LCTRL &kp LGUI &kp SPACE   &kp RET  &kp BSPC &kp LALT  &mo RIGHT_LAYER
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -53,10 +53,10 @@
 // |       |     |     |      |      |      |         |  |       |      |   0   |   ,   |   .   |   +   |       |
 //                     |      |      |      |         |  |       |      |       |       |
             bindings = <
-&trans    &trans     &trans     &trans      &trans  &trans                             &trans     &kp N7        &kp N8        &kp N9         &kp KP_DIVIDE    &trans
-&trans    &trans     &kp UP     &trans      &trans  &trans                             &trans     &kp N4        &kp N5        &kp N6         &kp KP_MULTIPLY  &trans
-&trans    &kp LEFT   &kp DOWN   &kp RIGHT   &trans  &trans                             &trans     &kp N1        &kp N2        &kp N3         &kp KP_SUBTRACT  &trans
-&trans    &trans     &trans     &trans      &trans  &trans    &trans       &trans      &trans     &kp N0        &kp KP_COMMA  &kp PERIOD     &kp KP_PLUS      &trans
+&kp PG_UP    &trans     &trans     &trans      &trans  &trans                             &trans     &kp N7        &kp N8        &kp N9         &kp KP_DIVIDE    &trans
+&kp PG_DN    &trans     &kp UP     &trans      &trans  &trans                             &trans     &kp N4        &kp N5        &kp N6         &kp KP_MULTIPLY  &trans
+&kp HOME     &kp LEFT   &kp DOWN   &kp RIGHT   &trans  &trans                             &trans     &kp N1        &kp N2        &kp N3         &kp KP_SUBTRACT  &trans
+&kp END      &trans     &trans     &trans      &trans  &trans    &trans       &trans      &trans     &kp N0        &kp KP_COMMA  &kp PERIOD     &kp KP_PLUS      &trans
                                 &trans      &trans  &trans    &trans       &trans      &trans     &trans        &trans
             >;
 
