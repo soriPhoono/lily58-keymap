@@ -47,24 +47,24 @@
 
         left_layer {
 // ------------------------------------------------------------------------------------------------------------
-// | PG_UP |     |     |      |      |      |                    |      |   7   |   8   |   9   |   /   |       |
-// | PG_DN |     |    |      |      |      |                    |      |   4   |   5   |   6   |   *   |       |
-// |  HOME |    |    |     |      |      |                    |      |   1   |   2   |   3   |   -   |       |
-// |  END  |     |     |      |      |      |         |  |       |      |   0   |   ,   |   .   |   +   |       |
-//                     |      |      |      |         |  |       |      |       |       |
+// | PG_UP |     |     |      |      |      |                    |   7   |   8   |   9   |   /   |      |       |
+// | PG_DN |     |    |      |      |      |                    |   4   |   5   |   6   |   *   |      |       |
+// |  HOME |    |    |     |      |      |                    |   1   |   2   |   3   |   -   |      |       |
+// |  END  |     |     |      |      |      |         |  |       |   0   |   ,   |   .   |   +   |      |       |
+//                     |      |      |      |         |  |       |       |       |       |
             bindings = <
-&kp PG_UP    &trans     &trans     &trans      &trans  &trans                             &trans     &kp N7        &kp N8        &kp N9         &kp KP_DIVIDE    &trans
-&kp PG_DN    &trans     &kp UP     &trans      &trans  &trans                             &trans     &kp N4        &kp N5        &kp N6         &kp KP_MULTIPLY  &trans
-&kp HOME     &kp LEFT   &kp DOWN   &kp RIGHT   &trans  &trans                             &trans     &kp N1        &kp N2        &kp N3         &kp KP_SUBTRACT  &trans
-&kp END      &trans     &trans     &trans      &trans  &trans    &trans       &trans      &trans     &kp N0        &kp KP_COMMA  &kp PERIOD     &kp KP_PLUS      &trans
-                                   &trans      &trans  &trans    &trans       &trans      &trans     &trans        &trans
+&kp PG_UP    &trans     &trans     &trans      &trans  &trans                             &kp N7        &kp N8        &kp N9         &kp KP_DIVIDE       &trans  &trans
+&kp PG_DN    &trans     &kp UP     &trans      &trans  &trans                             &kp N4        &kp N5        &kp N6         &kp KP_MULTIPLY     &trans  &trans
+&kp HOME     &kp LEFT   &kp DOWN   &kp RIGHT   &trans  &trans                             &kp N1        &kp N2        &kp N3         &kp KP_SUBTRACT     &trans  &trans
+&kp END      &trans     &trans     &trans      &trans  &trans    &trans       &trans      &kp N0        &kp KP_COMMA  &kp PERIOD     &kp KP_PLUS         &trans  &trans
+                                   &trans      &trans  &trans    &trans       &trans      &trans        &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         right_layer {
-// ------------------------------------------------------------------------------------------------------------
+//  ------------------------------------------------------------------------------------
 // | F1 | F2 | F3 | F4 | F5 | F6 |                   | F7 | F8  | F9  | F10 | F11 | F12 |
 // |    |    |    |    |    |    |                   |    |     |     |     |     |     |
 // |    |    |    |    |    |    |                   |    |     |     |     |     |     |
@@ -82,7 +82,7 @@
         };
 
         tri_layer {
-// ------------------------------------------------------------------------------------------------------------
+//  -------------------------------------------------------------------------------------------
 // |     |     |     |     |     |     |                   |     |     |     |     |     |     |
 // | RST |     |     |     |     |     |                   |     |     |     |     |     | RST |
 // | BTL | BT0 | BT1 | BT2 | BT3 | BT4 |                   | BTR |     |     |     |     | BTL |
